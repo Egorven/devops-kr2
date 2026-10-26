@@ -1,4 +1,4 @@
-# KR2: Сидоров.
+#  KR2: Сидоров.
 import os
 import socket
 
