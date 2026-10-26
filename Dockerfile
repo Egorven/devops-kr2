@@ -5,5 +5,8 @@ WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
 
+RUN useradd -m appuser
+USER appuser
+
 EXPOSE 8001
 CMD ["gunicorn", "--bind", "0.0.0.0:8001", "app:app"]
